@@ -7,7 +7,7 @@ import './App.module.css'
 
 const App = () => (
   <Layout>
-    <Home />
+     <Home />
   </Layout>
 )
 

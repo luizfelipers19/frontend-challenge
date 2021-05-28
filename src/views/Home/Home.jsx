@@ -4,6 +4,7 @@ import { SubHeader } from 'components'
 import { SomosClient } from 'utils'
 
 import styles from './Home.module.css'
+import { Link } from 'react-router-dom'
 
 class Home extends React.Component {
   state = {}
@@ -17,11 +18,22 @@ class Home extends React.Component {
           breadcrumb={[{ text: 'Home' }]}
           heading="Somos Front-end Challange"
         />
-        <div className={styles.wrapper}>
-          <h1>Hi</h1>
-        </div>
-        <div className="ButtonSpot">
-            {/* Button Here! */}
+       
+        <div className={styles.centered}>
+        <div className='header'>
+              <h1>
+              Pesquise um artista!
+              </h1>
+            </div>
+            <div className={styles.botao}>
+              <Link to='/search'>
+                <button>Buscar já!</button>
+              </Link>
+              
+            </div>
+            
+            
+
         </div>
       </React.Fragment>
     )
