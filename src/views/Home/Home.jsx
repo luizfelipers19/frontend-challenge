@@ -20,6 +20,9 @@ class Home extends React.Component {
         <div className={styles.wrapper}>
           <h1>Hi</h1>
         </div>
+        <div className="ButtonSpot">
+            {/* Button Here! */}
+        </div>
       </React.Fragment>
     )
   }
