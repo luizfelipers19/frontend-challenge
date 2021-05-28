@@ -4,6 +4,7 @@ import { Layout, SubHeader } from 'components'
 import { SomosClient } from 'utils'
 
 import styles from './SearchPage.module.css'
+import Search from 'components/SearchBar/Search'
 
  class SearchPage extends React.Component {
   state = {}
@@ -24,14 +25,24 @@ import styles from './SearchPage.module.css'
         <div className={styles.centered}>
           {/*Mantendo o layout proposto originalmente*/}
             <div className="header">
-              <h2>Busque por um artista ou grupo</h2>
+              <h2>Busque um artista ou grupo</h2>
               
             </div>
             
-
+ {/*Substituindo o Hardcoded por um componente avulso
+ 
         <div className={styles.searchBar}>
-          <input></input>
-        </div>
+              <input type='text' placeholder='Pesquise pelo nome de um artista'></input>
+            </div>
+ 
+ */}
+
+
+<div className={styles.searchBar}>
+<Search></Search>
+</div>
+ 
+        
             
             
 

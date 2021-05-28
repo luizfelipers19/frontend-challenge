@@ -22,7 +22,7 @@ class Home extends React.Component {
         <div className={styles.centered}>
         <div className='header'>
               <h1>
-              Pesquise um artista!
+              Pronto para pesquisar um artista?
               </h1>
             </div>
             <div className={styles.botao}>

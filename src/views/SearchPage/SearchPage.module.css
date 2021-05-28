@@ -7,7 +7,7 @@
 
 .centered{
 
-  width: 50%;
+  
   padding: 30px 20px;
   margin: 10px auto;
   font: 16px/14px 'Nunito', sans-serif;
@@ -15,7 +15,9 @@
 }
 
 .searchBar{
-  margin: 20px;
+  margin: 20px auto;
   padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
 
 }
