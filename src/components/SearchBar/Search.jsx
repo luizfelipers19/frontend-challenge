@@ -1,5 +1,7 @@
 import React from 'react';
 
+import axios from 'axios'
+
 class Search extends React.Component{
 
     constructor(props){
@@ -15,12 +17,13 @@ class Search extends React.Component{
 
     handleOnInputChange = (event) => {
         
-        this.setState( {query: event.target.value}  );
+        this.setState( {query: event.target.value, loading: true, message:''}  );
         
     };
 
     render(){
         const {query} = this.state;
+
         return(
         <div className='container'>
             <h2>Search Bar Here</h2>
